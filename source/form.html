@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>«Pink»</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="#" alt="Логотип «Pink»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="main-nav__page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <main class="form">
+    <p class="form__header-title">
+        Поделитесь своей историей и получите шанс выиграть ценный приз
+    </p>
+    <form class="form__login-form" method="post" action="https://echo.htmlacademy.ru">
+      <p class="text">
+        <label for="user-login">Фамилия:</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Укажите фамилию*">
+      </p>
+      <p class="text">
+        <label for="user-name">Имя:</label>
+        <input class="user-login-name" id="user-name" type="text" name="name" placeholder="Введите ваше имя*">
+      </p>
+      <p class="text">
+        <label for="user-patronymic">Отчество:</label>
+        <input class="user-login-patronymic" id="user-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже*">
+      </p>
+      <fieldset>
+        <legend>Ваши безбашенные достижения в путешествии</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">Сделал селфи с акулой</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block" checked>
+            <label for="filter-advantage-block">Обгорел на пляже</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-checkbox" type="checkbox" name="news" id="filter-news">
+            <label for="filter-news">Видел Чака Норриса</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Накупил сувениров</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-checkbox" type="checkbox" name="basket" id="filter-basket" checked>
+            <label for="filter-basket">Удержал башню</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+            <label for="filter-basket">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="form__number">
+        <p class="text">
+          <label for="number-login">Номер телефона</label>
+          <input class="login-icon-user" id="number-login" type="text" name="number-login" placeholder="Номер пожалуйста">
+        </p>
+        <p class="text">
+          <label for="user-email">Адрес почты</label>
+          <input class="login-icon-email" id="user-email" type="email" name="email" placeholder="Введите почту*">
+        </p>
+      </div>
+      <fieldset>
+        <legend>С каким приложением путешествовали?</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-radio" type="radio" name="product-group" value="iOS" id="filter-adaptive" checked>
+            <label for="filter-adaptive">Pink для iOS</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-radio" type="radio" name="product-group" value="Android" id="filter-fixed">
+            <label for="filter-fixed">Pink на Android</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input
+                                    filter-input-radio" type="radio" name="product-group" value="Windows" id="filter-rubber">
+            <label for="filter-rubber">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+      <p class="textarea">
+        <label for="textarea-comment">Опишите свои эмоции</label>
+        <textarea id="user-comment" name="comment" rows="6" cols="15" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить форму</button>
+      <p>* — обязательные поля</p>
+    </form>
+  </main>
+  <footer class="footer-page">
+    <div class="footer__logo">
+      <img class="footer-logo__img" src="#" alt="Лого">
+    </div>
+    <ul class="footer__social-list">
+      <li class="footer__social-item">
+        <a href="#">Твиттер</a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#">Фэйсбук</a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#">You-tube</a>
+      </li>
+    </ul>
+    <p class="footer__title">Разработано</p>
+    <a class="footer__link" href="https://up.htmlacademy.ru/adaptive/17">
+        <img class="footer__link-logo" src="#" alt="Логотип HTML Академии">
+    </a>
+  </footer>
+</body>
+
+</html>
